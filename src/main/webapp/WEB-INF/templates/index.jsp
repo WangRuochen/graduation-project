@@ -1,9 +1,16 @@
+<%--
+  Created by IntelliJ IDEA.
+  User: ksdhc
+  Date: 2016/3/25
+  Time: 15:17
+  To change this template use File | Settings | File Templates.
+--%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>管理员登录</title>
+  <title>会员登录</title>
   <link type="text/css" rel="stylesheet" href="../../../resources/css/bootstrap.min.css"/>
   <script type="text/javascript" src="../../../resources/js/jquery.min.js"></script>
   <script type="text/javascript" src="../../../resources/js/jquery-ui.min.js"></script>
@@ -99,19 +106,19 @@
     </div>
     <div class="nav navtop">
       <ul class="nav nav-tabs">
-        <li>
-          <a href="/">会员登录</a>
+        <li class="active">
+          <a href="#">会员登录</a>
         </li>
         <li>
           <a href="/vip/register">会员注册</a>
         </li>
-        <li class="active">
-          <a href="#">管理员登录</a>
+        <li>
+          <a href="/admin/login">管理员登录</a>
         </li>
       </ul>
     </div>
     <form class="form-signin" method="post">
-      <input type="text" class="input-block-level" placeholder="管理员账号">
+      <input type="text" class="input-block-level" placeholder="输入邮箱号">
       <input type="password" class="input-block-level" placeholder="输入6~18位密码">
       <label class="checkbox">
         <div class="cb">
@@ -120,6 +127,7 @@
       </label>
       <button class="btn btn-large btn-primary" type="submit">登录</button>
     </form>
+
   </div> <!-- /container -->
 
   <div id="footer">
@@ -129,3 +137,4 @@
   </div>
 </body>
 </html>
+

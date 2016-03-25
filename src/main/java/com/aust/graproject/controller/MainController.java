@@ -15,9 +15,13 @@ public class MainController {
         return "index";
     }
 
-    @RequestMapping(value = "/login", method = RequestMethod.GET)
+    @RequestMapping(value = "/admin/login", method = RequestMethod.GET)
     public String login() {
         return "admin/login";
     }
 
+    @RequestMapping(value = "/vip/register", method = RequestMethod.GET)
+    public String register() {
+        return "vip/register";
+    }
 }
